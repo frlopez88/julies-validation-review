@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Registration Form with Validations</h1>
+
+    <form action="index.html">
+
+        <label>Full Name</label>
+        <input name="fullname" minlength="10" required> 
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Password</label>
+        <input  name="pass" maxlength="10"  type="password" required>
+
+        <lable>Age</lable>
+        <input type="number" name="age" min="18" max="25"  required>
+
+        <lable>LinkedIn Profile</lable>
+        <input  name="url" type="url">
+
+        <button>Submit</button>
+    </form>
+
+    <p>
+        http://127.0.0.1:5500/index.html?fullname=Fernando+Lopez&email=fernando.lopez%40codex.academy&pass=Hello&age=21&url=https%3A%2F%2Fgoogle.com
+    </p>
+
+</body>
+</html>
